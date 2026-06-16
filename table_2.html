@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>School Timetable</title>
+    </head>
+    <body>
+
+        <table border="1">
+            <!-- colspan = columns span = Horizontal merge(left ↔ right) -->
+
+            <!-- Table Title -->
+            <tr>
+                <th colspan="6" class="title">
+                    School Weekly Timetable
+                </th>
+            </tr>
+
+            <!-- Days Header -->
+            <tr>
+                <th>Day</th>
+                <th>9-10 AM</th>
+                <th>10-11 AM</th>
+                <th>11-12 PM</th>
+                <th>1-2 PM</th>
+                <th>2-3 PM</th>
+            </tr>
+
+            <!-- Monday -->
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td>Science</td>
+
+                <!-- Lunch spans all days -->
+
+                <!-- rowspan = rows span = Vertical merge(up ↕ down) -->
+                <td rowspan="5" class="lunch">
+                    LUNCH BREAK
+                </td>
+
+                <td>English</td>
+                <td>Computer</td>
+            </tr>
+
+            <!-- Tuesday -->
+            <tr>
+                <td>Tuesday</td>
+                <td>English</td>
+                <td>Math</td>
+                <td colspan="2">Computer Lab</td>
+            </tr>
+
+            <!-- Wednesday -->
+            <tr>
+                <td>Wednesday</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Sports</td>
+            </tr>
+
+            <!-- Thursday -->
+            <tr>
+                <td>Thursday</td>
+                <td colspan="2">Project Work</td>
+                <td>Science</td>
+                <td>Computer</td>
+            </tr>
+
+            <!-- Friday -->
+            <tr>
+                <td>Friday</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td colspan="2">Seminar</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>
